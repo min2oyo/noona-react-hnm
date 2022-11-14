@@ -1,5 +1,7 @@
 ## Installed
 - npx create-react-app --template typescript .  // 타입스크립트 템플릿
+- npm install react-router-dom                  // 라우터
+  - https://reactrouter.com/
 
 ## Task
 - 전체 상품 페이지, 로그인, 상품상세페이지
