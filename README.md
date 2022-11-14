@@ -5,9 +5,14 @@
   - npm install react-router-dom
 - fontawesome (https://fontawesome.com/v5/docs/web/use-with/react)
   - npm i --save @fortawesome/fontawesome-svg-core
-  - npm install --save @fortawesome/free-solid-svg-icons
-  - npm install --save @fortawesome/react-fontawesome
+  - npm i --save @fortawesome/free-solid-svg-icons
+  - npm i --save @fortawesome/react-fontawesome
   - npm i --save @fortawesome/free-regular-svg-icons
+- JSON Server (https://www.npmjs.com/package/json-server)
+  - npm i -g json-server
+## Using
+- JSON Server
+  - json-server --watch db.json --port 3004
 
 ## Task
 - 네비게이션 바, 전체 상품 페이지, 로그인, 상품상세페이지
