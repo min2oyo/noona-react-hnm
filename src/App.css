@@ -1,0 +1,42 @@
+/* login */
+.login-button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+}
+
+/* logo */
+.nav-section {
+  display: flex;
+  justify-content: center;
+}
+
+/* manu */
+.manu-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.manu-list li {
+  padding: 10px
+}
+
+.menu-area {
+  display: flex;
+  justify-content: center;
+}
+
+/* search */
+.search {
+  border-bottom: 1px solid black;
+  height: 30px;
+}
+
+.search input {
+  border: 0px;
+  padding-left: 10px;
+}
+
+.search input:focus {
+  outline: none;
+}
