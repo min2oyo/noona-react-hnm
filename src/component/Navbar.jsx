@@ -1,18 +1,25 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
 
   // 변수
-  const menuList = ["여성", "Divided", "남성", "신생아/유아", "아동", "H&M HOME", "Sale", "지속가능성"];
+  const menuList = ["여성", "Divided", "남성", "신생아/유아", "아동", "H&M HOME", "Sale", "지속가능성"];  // 메뉴
+  const navigate = useNavigate(); // 이동
+
+  // 함수
+  const goToLogin = () => { // 로그인 버튼 클릭
+    navigate(`/login`);
+  };
 
   // 출력
   return (
     <>
       {/* 로그인 */}
       <div>
-        <div className='login-button'>
+        <div className='login-button' onClick={goToLogin}>
           <FontAwesomeIcon icon={faUser} />
           <div>로그인</div>
         </div>
