@@ -27,7 +27,6 @@ const ProductAll = () => {
         <Row>
           {productlist?.map(item => (
             <Col key={item?.id} lg={3}><ProductCard item={item} /></Col>
-
           ))}
         </Row>
       </Container>
