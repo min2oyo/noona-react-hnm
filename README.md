@@ -1,5 +1,3 @@
-5강 5분 부터?
-
 ## Installed
 - 타입스크립트 템플릿
   - npx create-react-app --template typescript .
