@@ -3,7 +3,7 @@ import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({ authenticate, setAuthenticate }) => {
 
   // 변수
   const menuList = ["여성", "Divided", "남성", "신생아/유아", "아동", "H&M HOME", "Sale", "지속가능성"];  // 메뉴
@@ -11,7 +11,12 @@ const Navbar = () => {
 
   // 함수
   const goToLogin = () => { // 로그인 버튼 클릭
-    navigate(`/login`);
+    if (authenticate) {
+      setAuthenticate(false);
+      alert(`로그아웃 되었습니다`);
+    } else {
+      navigate(`/login`);
+    }
   };
 
   const search = event => {    // 검색 입력
@@ -28,7 +33,7 @@ const Navbar = () => {
       <div>
         <div className='login-button' onClick={goToLogin}>
           <FontAwesomeIcon icon={faUser} />
-          <div>로그인</div>
+          <div>{authenticate ? `안녕하세요! 로그아웃` : `로그인`}</div>
         </div>
       </div>
       {/* 로고 */}

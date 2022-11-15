@@ -11,7 +11,7 @@ const ProductAll = () => {
 
   // 함수
   const getProducts = async () => { // 상품 목록 API
-    let url = `http://localhost:3004/products?q=${query.get(`q`)}`; // JSON Server에서 필터링
+    let url = `http://localhost:3004/products?q=${query.get(`q`) || ``}`; // JSON Server에서 필터링
     let data = await (await fetch(url)).json();
     console.log(`data: `, data);
     setProductlist(data);
