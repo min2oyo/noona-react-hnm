@@ -12,7 +12,7 @@ function App() {
   // 변수
   const [authenticate, setAuthenticate] = useState(false);  // 로그인 여부
 
-  // 함수
+  // 실행
   useEffect(() => {
     console.log(`로그인 여부`, authenticate);
   }, [authenticate]);
