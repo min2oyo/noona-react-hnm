@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className='menu-area'>
         <ul className='manu-list'>
           {menuList.map(menu => (
-            <li>{menu}</li>
+            <li key={menu}>{menu}</li>
           ))}
         </ul>
         {/* 검색 */}
