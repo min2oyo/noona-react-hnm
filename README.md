@@ -1,3 +1,6 @@
+## 배포
+- https://superb-khapse-f8a3c7.netlify.app/
+
 ## Installed
 - 타입스크립트 템플릿
   - npx create-react-app --template typescript .
