@@ -12,6 +12,8 @@
   - npm i --save @fortawesome/free-regular-svg-icons
 - JSON Server (https://www.npmjs.com/package/json-server)
   - npm i -g json-server
+- bootstrap (https://react-bootstrap.github.io/getting-started/introduction)
+  - npm i react-bootstrap bootstrap
 ## Using
 - JSON Server
   - json-server --watch db.json --port 3004

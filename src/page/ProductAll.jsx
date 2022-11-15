@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import ProductCard from "../component/ProductCard";
 
 const ProductAll = () => {
@@ -22,8 +23,14 @@ const ProductAll = () => {
   // 출력
   return (
     <>
-      <h2>전체 상품 페이지</h2>
-      <ProductCard />
+      <Container>
+        <Row>
+          {productlist?.map(item => (
+            <Col key={item?.id} lg={3}><ProductCard item={item} /></Col>
+
+          ))}
+        </Row>
+      </Container>
     </>
   );
 
