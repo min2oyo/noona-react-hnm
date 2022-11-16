@@ -1,21 +1,20 @@
 import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
 import { useSearchParams } from "react-router-dom";
 import ProductCard from "../component/ProductCard";
+import { productAction } from "../redux/actions/productAction";
 
 const ProductAll = () => {
 
   // 변수
-  const [query, setQuery] = useSearchParams();          // 검색 결과
-  const [productlist, setProductlist] = useState(null); // 상품 목록
+  const dispatch = useDispatch();                               // 리덕스
+  const productlist = useSelector(state => state.productlist);  // 상품 목록
+  const [query, setQuery] = useSearchParams();                  // 검색 결과
 
   // 함수
-  const getProducts = async () => { // 상품 목록 API
-    // let url = `https://my-json-server.typicode.com/min2oyo/noona-react-hnm/products?q=${query.get(`q`) || ``}`; // JSON Server에서 필터링
-    let url = `http://localhost:3004/products?q=${query.get(`q`) || ``}`; // JSON Server에서 필터링
-    let data = await (await fetch(url)).json();
-    console.log(`data: `, data);
-    setProductlist(data);
+  const getProducts = () => { // 상품 목록 API
+    dispatch(productAction.getProducts(query));
   };
 
   // 실행
