@@ -1,23 +1,37 @@
-## 배포
+## Deploy
 - https://superb-khapse-f8a3c7.netlify.app/
 
-## Installed
-- 타입스크립트 템플릿
+## Using
+- JSON Server
+  - json-server --watch db.json --port 3004
+
+## Installed Package
+- typescript
   - npx create-react-app --template typescript .
-- 라우터 (https://reactrouter.com/)
+- router
+  - https://reactrouter.com/
   - npm install react-router-dom
-- fontawesome (https://fontawesome.com/v5/docs/web/use-with/react)
+- fontawesome
+  - https://fontawesome.com/v5/docs/web/use-with/react
   - npm i --save @fortawesome/fontawesome-svg-core
   - npm i --save @fortawesome/free-solid-svg-icons
   - npm i --save @fortawesome/react-fontawesome
   - npm i --save @fortawesome/free-regular-svg-icons
-- JSON Server (https://www.npmjs.com/package/json-server)
-  - npm i -g json-server
-- bootstrap (https://react-bootstrap.github.io/getting-started/introduction)
-  - npm i react-bootstrap bootstrap
-## Using
 - JSON Server
-  - json-server --watch db.json --port 3004
+  - https://www.npmjs.com/package/json-server
+  - npm i -g json-server
+- bootstrap
+  - https://react-bootstrap.github.io/getting-started/introduction
+  - npm i react-bootstrap bootstrap
+- redux
+  - https://redux.js.org/introduction/getting-started
+  - npm i redux
+- react redux
+  - https://react-redux.js.org/introduction/getting-started
+  - npm i react-redux
+- react middleware
+  - https://github.com/reduxjs/redux-thunk
+  - npm i redux-thunk
 
 ## Task
 - 네비게이션 바, 전체 상품 페이지, 로그인, 상품상세페이지
