@@ -32,6 +32,9 @@
 - react middleware
   - https://github.com/reduxjs/redux-thunk
   - npm i redux-thunk
+- redux devtools extension
+  - https://github.com/zalmoxisus/redux-devtools-extension
+  - npm i --save redux-devtools-extension
 
 ## Task
 - 네비게이션 바, 전체 상품 페이지, 로그인, 상품상세페이지
@@ -51,3 +54,4 @@
   - 버튼을 클릭시 로그아웃이 됨
   - 로그아웃이 되면 상품 디테일페이지 볼 수 없음
 - 상품 검색 기능
+- ProductDetail에 redux middleware 적용
