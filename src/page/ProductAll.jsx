@@ -8,9 +8,9 @@ import { productAction } from "../redux/actions/productAction";
 const ProductAll = () => {
 
   // 변수
-  const dispatch = useDispatch();                               // 리덕스
-  const productlist = useSelector(state => state.productlist);  // 상품 목록
-  const [query, setQuery] = useSearchParams();                  // 검색 결과
+  const dispatch = useDispatch();                                             // 리덕스
+  const productlist = useSelector(state => state.productReducer.productlist); // 상품 목록
+  const [query, setQuery] = useSearchParams();                                // 검색 결과
 
   // 함수
   const getProducts = () => { // 상품 목록 API
