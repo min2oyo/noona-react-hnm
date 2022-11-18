@@ -1,18 +1,22 @@
+import { createSlice } from "@reduxjs/toolkit";
+
 let initialState = {
-  productlist: []
+  productList: [],
+  selectedItem: null
 };
 
-function productReducer(state = initialState, action) {
-
-  const { type, payload } = action;
-
-  switch (type) {
-    case "GET_PRODUCT_SUCCESS":
-      return { ...state, productlist: payload.data };
-    default:
-      return { ...state };
+const productSlice = createSlice({
+  name: `product`,
+  initialState,
+  reducers: {
+    getAllProducts(state, action) {   // 상품 전체 목록
+      state.productList = action.payload.data;
+    },
+    getSingleProduct(state, action) { // 상품 1개 정보
+      state.selectedItem = action.payload.data;
+    }
   }
+});
 
-}
-
-export default productReducer;
+export const productActions = productSlice.actions;
+export default productSlice.reducer;

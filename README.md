@@ -35,6 +35,10 @@
 - redux devtools extension
   - https://github.com/zalmoxisus/redux-devtools-extension
   - npm i --save redux-devtools-extension
+- Redux Toolkit
+  - https://redux-toolkit.js.org/introduction/getting-started
+  - npm i @reduxjs/toolkit
+
 
 ## Task
 - 네비게이션 바, 전체 상품 페이지, 로그인, 상품상세페이지
@@ -55,3 +59,4 @@
   - 로그아웃이 되면 상품 디테일페이지 볼 수 없음
 - 상품 검색 기능
 - ProductDetail에 redux middleware 적용
+- 로그인 여부 redux 상태에서 표시 되게 하기

@@ -9,7 +9,7 @@ const ProductAll = () => {
 
   // 변수
   const dispatch = useDispatch();                                             // 리덕스
-  const productlist = useSelector(state => state.productReducer.productlist); // 상품 목록
+  const productlist = useSelector(state => state.productReducer.productList); // 상품 목록
   const [query, setQuery] = useSearchParams();                                // 검색 결과
 
   // 함수

@@ -10,8 +10,8 @@ const ProductDetail = () => {
 
   // 함수
   const getProductDetail = async () => {  // 상품 상세 정보 API
-    // let url = `https://my-json-server.typicode.com/min2oyo/noona-react-hnm/products/${id}`;
-    let url = `http://localhost:3004/products/${id}`;
+    let url = `https://my-json-server.typicode.com/min2oyo/noona-react-hnm/products/${id}`;
+    // let url = `http://localhost:3004/products/${id}`;
     let data = await (await fetch(url)).json();
     console.log(`data`, data);
     setProduct(data);
